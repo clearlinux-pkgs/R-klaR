@@ -4,7 +4,7 @@
 #
 Name     : R-klaR
 Version  : 0.6.14
-Release  : 3
+Release  : 4
 URL      : https://cran.r-project.org/src/contrib/klaR_0.6-14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/klaR_0.6-14.tar.gz
 Summary  : Classification and Visualization
@@ -40,11 +40,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1522157135
+export SOURCE_DATE_EPOCH=1522163154
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1522157135
+export SOURCE_DATE_EPOCH=1522163154
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
