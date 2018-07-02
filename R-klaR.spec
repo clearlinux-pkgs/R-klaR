@@ -4,7 +4,7 @@
 #
 Name     : R-klaR
 Version  : 0.6.14
-Release  : 13
+Release  : 14
 URL      : https://cran.r-project.org/src/contrib/klaR_0.6-14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/klaR_0.6-14.tar.gz
 Summary  : Classification and Visualization
