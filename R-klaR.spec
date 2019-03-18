@@ -4,22 +4,12 @@
 #
 Name     : R-klaR
 Version  : 0.6.14
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/klaR_0.6-14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/klaR_0.6-14.tar.gz
 Summary  : Classification and Visualization
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-ClustVarLV
-Requires: R-clustMixType
-Requires: R-combinat
-Requires: R-e1071
-Requires: R-miniUI
-Requires: R-questionr
-Requires: R-randomForest
-Requires: R-rstudioapi
-Requires: R-scatterplot3d
-Requires: R-som
 BuildRequires : R-ClustVarLV
 BuildRequires : R-clustMixType
 BuildRequires : R-combinat
@@ -48,11 +38,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1538579884
+export SOURCE_DATE_EPOCH=1552890659
 
 %install
+export SOURCE_DATE_EPOCH=1552890659
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1538579884
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -87,8 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library klaR|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  klaR || :
 
 
 %files
@@ -118,3 +107,9 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/klaR/help/paths.rds
 /usr/lib64/R/library/klaR/html/00Index.html
 /usr/lib64/R/library/klaR/html/R.css
+/usr/lib64/R/library/klaR/tests/EDAM.R
+/usr/lib64/R/library/klaR/tests/EDAM.Rout.save
+/usr/lib64/R/library/klaR/tests/EDAM.ps.save
+/usr/lib64/R/library/klaR/tests/testklaR.ps.save
+/usr/lib64/R/library/klaR/tests/testsklaR.R
+/usr/lib64/R/library/klaR/tests/testsklaR.Rout.save
