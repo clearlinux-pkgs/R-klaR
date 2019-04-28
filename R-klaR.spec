@@ -4,14 +4,12 @@
 #
 Name     : R-klaR
 Version  : 0.6.14
-Release  : 23
+Release  : 24
 URL      : https://cran.r-project.org/src/contrib/klaR_0.6-14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/klaR_0.6-14.tar.gz
 Summary  : Classification and Visualization
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-highr
-Requires: R-shiny
 BuildRequires : R-ClustVarLV
 BuildRequires : R-clustMixType
 BuildRequires : R-combinat
@@ -42,10 +40,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1556476041
+export SOURCE_DATE_EPOCH=1556480167
 
 %install
-export SOURCE_DATE_EPOCH=1556476041
+export SOURCE_DATE_EPOCH=1556480167
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
