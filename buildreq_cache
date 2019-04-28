@@ -3,9 +3,11 @@ R-ClustVarLV
 R-clustMixType
 R-combinat
 R-e1071
+R-highr
 R-miniUI
 R-questionr
 R-randomForest
 R-rstudioapi
 R-scatterplot3d
+R-shiny
 R-som
