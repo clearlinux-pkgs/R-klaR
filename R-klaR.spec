@@ -4,23 +4,14 @@
 #
 Name     : R-klaR
 Version  : 0.6.14
-Release  : 28
+Release  : 29
 URL      : https://cran.r-project.org/src/contrib/klaR_0.6-14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/klaR_0.6-14.tar.gz
 Summary  : Classification and Visualization
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-ClustVarLV
-Requires: R-clustMixType
 Requires: R-combinat
-Requires: R-e1071
-Requires: R-miniUI
 Requires: R-questionr
-Requires: R-randomForest
-Requires: R-rstudioapi
-Requires: R-scatterplot3d
-Requires: R-shiny
-Requires: R-som
 BuildRequires : R-ClustVarLV
 BuildRequires : R-clustMixType
 BuildRequires : R-combinat
@@ -33,6 +24,7 @@ BuildRequires : R-scatterplot3d
 BuildRequires : R-shiny
 BuildRequires : R-som
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 e.g. regularized discriminant analysis, sknn() kernel-density naive Bayes, 
@@ -50,10 +42,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562202334
+export SOURCE_DATE_EPOCH=1571850964
 
 %install
-export SOURCE_DATE_EPOCH=1562202334
+export SOURCE_DATE_EPOCH=1571850964
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
