@@ -1,11 +1,5 @@
-0.6.14
+0.6.15
 R-ClustVarLV
 R-clustMixType
-R-e1071
-R-miniUI
-R-randomForest
-R-rstudioapi
 R-scatterplot3d
-R-shiny
 R-som
-util-linux
