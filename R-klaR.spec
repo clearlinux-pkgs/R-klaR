@@ -4,24 +4,16 @@
 #
 Name     : R-klaR
 Version  : 0.6.15
-Release  : 33
+Release  : 34
 URL      : https://cran.r-project.org/src/contrib/klaR_0.6-15.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/klaR_0.6-15.tar.gz
 Summary  : Classification and Visualization
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
-Requires: R-ClustVarLV
-Requires: R-clustMixType
 Requires: R-combinat
 Requires: R-questionr
-Requires: R-scatterplot3d
-Requires: R-som
-BuildRequires : R-ClustVarLV
-BuildRequires : R-clustMixType
 BuildRequires : R-combinat
 BuildRequires : R-questionr
-BuildRequires : R-scatterplot3d
-BuildRequires : R-som
 BuildRequires : buildreq-R
 
 %description
@@ -34,21 +26,22 @@ e.g. regularized discriminant analysis, sknn() kernel-density naive Bayes,
 
 %prep
 %setup -q -c -n klaR
+cd %{_builddir}/klaR
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582124342
+export SOURCE_DATE_EPOCH=1589784152
 
 %install
-export SOURCE_DATE_EPOCH=1582124342
+export SOURCE_DATE_EPOCH=1589784152
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
