@@ -4,7 +4,7 @@
 #
 Name     : R-klaR
 Version  : 1.7.1
-Release  : 52
+Release  : 53
 URL      : https://cran.r-project.org/src/contrib/klaR_1.7-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/klaR_1.7-1.tar.gz
 Summary  : Classification and Visualization
